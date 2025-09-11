@@ -35,6 +35,17 @@ footer {
   border-top-width: 5px;
   border: solid;
   border-color:white;
+  font-family:sans-serif;
+  color: white;
+}
+
+footer a {
+  text-decoration:none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration:underline;
 }
 
 /*********** Splash Page ************************/
@@ -88,6 +99,12 @@ hr {
   border:none
 }
 
+.main {
+  padding: 20px 10px;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
 section h2 {
   font-family: sans-serif;
   padding: 20px;
@@ -103,17 +120,32 @@ section h3 {
 
 section dl {
   display: grid;
-  margin-left: auto;
-  margin-right: auto; 
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  font-family: sans-serif;
+  font-weight:bold;
+}
+
+section dd {
+  padding: 0.5em;
+  font-family: sans-serif;
 }
 
 section ul {
   list-style:circle;
+  font-family: sans-serif;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+section li {
+  padding: 0.25em;
 }
 
 section a {
   color: #0000EE;
   text-decoration: none;
+  font-weight:bold;
 }
 
 section a:hover {
@@ -165,11 +197,29 @@ section a:hover {
 }
 
 /**************   Contact Page   *****************/
+.contact h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:bold;
+  font-size: 200%;
+}
+
+.contact p{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style:italic;
+}
+
 .one-col {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   padding: 10px;
+  max-width: 800px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input {
